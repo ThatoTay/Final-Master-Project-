@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>TPE/HOME</title>
+    <link rel="stylesheet" href="Style/styles.css">
+    <script src="/app.js"></script>
+    <script src="https://kit.fontawesome.com/51bc2aa7cb.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    <body>
+        <header>
+          <nav class="navbar">
+            <div class="content">
+        
+              <div class="logo"> <img src="img/logo.png" class="logo" alt="logo" align="left"  width= "700" height="90"></div>
+              <ul class="menu-list">
+                <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+                 <li><a class="active" href="index.html">Home</a></li>
+                 <li><a href="About.html">What defines us?</a></li>
+                 <li><a href="Our Services.html">Our Services</a></li>
+                 <li><a href="Our Gallery.html">Gallery</a></li>
+                 <li><a href="Contact.php">Contact us</a></li>
+              </ul>
+              <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+
+                    <!-- Styling and controlling picture slide--> 
+<div class="slideshow-container"> 
+  <div class="mySlides fade"> 
+  <img src="slider/img2.jpg" width="100%" height="400px">
+  </div> 
+  
+  <div class="mySlides fade"> 
+  <img src="slider/img3.jpg" width="100%" height="400px"> 
+  </div> 
+  
+  <div class="mySlides fade"> 
+  <img src="slider/img4.jpg" width="100%" height="400px">
+  </div> 
+  
+  <div class="mySlides fade"> 
+  <img src="slider/img5.jpg" width="100%" height="400px"> 
+  </div> 
+  
+  <div class="mySlides fade"> 
+  <img src="slider/img6.jpg" width="100%" height="400px"> 
+  </div> 
+  
+  <script>
+    <!-- An autoset slide--> 
+    
+    var slideIndex = 0; 
+    showSlides(); 
+    function showSlides() { 
+    var i; 
+    var slides = document.getElementsByClassName("mySlides"); 
+    for (i = 0; i < slides.length; i++) { 
+    slides[i].style.display = "none"; 
+    } 
+    
+    slideIndex++; 
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 5 seconds 
+    } 
+  </script>
+  
+            
+            <!--div class="content1">
+              <div class="photo">
+                <img src="slider/img2.jpg">
+                <img src="slider/img3.jpg">
+                <img src="slider/img4.jpg">
+                <img src="slider/img5.jpg">
+                <img src="slider/img6.jpg">
+                <img src="slider/img6.jpg">
+              </div>
+        </div>
+        <script>
+              var indexValue = 0;
+              function slideShow(){
+                setTimeout(slideShow, 1500);
+                var x;
+                const img = document.querySelectorAll("img");
+                for(x = 0; x < img1.length; x++){
+                  img[x].style.display = "none";
+                }
+                indexValue++;
+                if(indexValue > img.length){indexValue = 1}
+                img[indexValue -1].style.display = "block";
+              }
+              
+              slideShow();
+            </script-->
+  
+              
+                </br></br>
+            
+            <div class="clear"></div>
+
+        </header>
+
+      </br></br>
+            <div class="wrapper">   
+                <p class="paragraph">
+                  <img src="img/gif1.gif" class="gif" align="right" hspace="30px" vspace="30px">
+                  <img src="img/gif1.gif" class="gif" align="left" hspace="30px" vspace="30px">
+
+                <h3 align="center" >"SO MUCH TO THINK ABOUT.</br>SO LITTLE TIME.</br> THAT’S WHERE WE COME IN!"</h3>
+                </br>
+                <h4><b>TAY PROMOS AND EVENTS</b> is a full-service event planning and design company committed to curating unique, distinctive, and memorable experiences.
+                With unsurpassed creativity and attention to detail, our professional team takes the guesswork out of the event planning and design 
+                process.We a marketing agency and an event organizer that delivers elegant and sophisticated work, we help you build your vision, expand your brand and provide you with an exclusive service. 
+				We organize all kinds of events and make them a success and we also have well behaved waiters who have all it takes to make your event a dream come true. We also organize events such as weddings, birthday parties, baby showers, bradial 
+				showers etc.</h4>
+            </p>   
+             
+            </div>
+            </br> </br></br>
+            <p>  
+                <img src="PosterMaker/piink.png" class="img full-circle"  align="left">
+
+            </br> </br>
+               <h1 style="color:white"; class="rainbow-text" align="center"><b><i> WE PROVIDE YOU WITH AN</br></br>   EXCLUSIVE SERVICE AND STYLISH</br></br>   FURNITURE FOR EVENTS AND LUXURY </br> </br> WEDDINGS, BIRTHDAY PARTIES, BABY </br></br>  SHOWERS, ETC</i></b></h1>
+
+            </p>
+
+            </br> </br> </br> </br> </br> </b> </br> </br></br>
+            
+            <hr class="horizontal">
+
+            <script>
+              const body = document.querySelector("body");
+              const navbar = document.querySelector(".navbar");
+              const menu = document.querySelector(".menu-list");
+              const menuBtn = document.querySelector(".menu-btn");
+              const cancelBtn = document.querySelector(".cancel-btn");
+              menuBtn.onclick = ()=>{
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+                body.classList.add("disabledScroll");
+              }
+              cancelBtn.onclick = ()=>{
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                cancelBtn.classList.remove("show");
+                body.classList.remove("disabledScroll");
+              }
+          
+              window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+              }
+            </script>  
+
+
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Company</h4>
+  	 			<ul>
+  	 				<li><a href="About.html">What defines us?</a></li>
+  	 				<li><a href="Our Services.html">Our services</a></li>
+             <li><a href="Our Gallery.html">Gallery</a></li>
+            <li><a href="Contact.php">Contact us</a></li>
+  	 				<li><a href="#">Privacy policy</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Operating hours</h4>
+  	 			<ul>
+  	 				<li>Monday to Friday</li>
+  	 				<li>09h00 – 17h00</a></li>
+  	 				<li>Saturday</li>
+  	 				<li>08h00 – 15h00</li>
+  	 				<li>Sunday and Public Holidays</li>
+                    <li>Closed</li>  
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Address</h4>
+  	 			<ul>
+  	 				<li>4876 Bila Street</li>
+  	 				<li>Chiawelo ext 2</li>
+  	 				<li>Soweto</a></li>
+  	 				<li>1818</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+				<a href="https://www.facebook.com/taypromosandevents/"><img src="icons/facebook.png" class="icon1" align="right"hspace="2px"vspace="2px"></i></a>
+                <a href="https://www.instagram.com/"><img src="icons/insta.jpg"class= "icon1" align="right"hspace="2px" vspace="2px"></i></a>
+                <a href="https://twitter.com/?lang=en"><img src="icons/twitter.jpg"class= "icon1" align="right"hspace="2px" vspace="2px"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+    </br>
+           <hr class="end">
+           <center> <p>copyright &#169; 2021 TAY PROMOS AND EVENTS. All rights resevered </p></center>
+  	 </div>
+     
+  </footer>
+</body>
+</html>

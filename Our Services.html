@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>TPE/Services</title>
+    <link rel="stylesheet" href="Style/services.css">
+    <link rel="stylesheet" href="Style/styles.css">
+    <script src="/app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    <body>
+      <header>
+        
+        <nav class="navbar">
+          <div class="content">
+      
+            <div class="logo"> <img src="img/logo.png" class="logo" alt="logo" align="left"  width= "700" height="90"></div>
+            <ul class="menu-list">
+              <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">What defines us?</a></li>
+                <li><a class="active" href="Our Services.html">Our Services</a></li>
+                <li><a href="Our Gallery.html">Gallery</a></li>
+                <li><a href="Contact.php">Contact us</a></li>
+            </ul>
+            <div class="icon menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+        
+   <img src="PosterMaker/copy.jpg" class="cover">
+            
+                    <div class="clear"></div>
+        
+ </header>
+ 
+ 
+  </br></br></br></br> </br></br></br></br></br>
+    <h2>ALL THE EVENTS WE HOST WITH LOVE:</h2>
+  
+    <img src="PosterMaker/tumi.png" class="half-circle1"  align="right" hspace="30px" vspace="30px">
+		<img src="PosterMaker/coverp.png" class="half-circle" align="left" hspace="30px" vspace="30px">
+    <center>
+    
+    <p class="events">
+    – Corporate celebrations
+  </br>
+  – Weddings
+    </br>
+  – Birthday
+    </br>
+     – Client/donor appreciation events
+    </br>
+      – Baby Showers
+    </br>
+      – Bridal Showers
+    </br>
+      – Unveilings
+   
+    </br>
+      – Branding and product launches
+    </br>
+      – Grand openings
+    </p>
+
+  </center>
+
+  </br>  </br>  </br>  </br> </br> 
+  <h5>Our Services</h5>
+  <p class="offer">
+    We offer excellence event management services and memorable experience
+  </p>
+
+  <center>
+    <div class="container4">
+      <div class="card">
+          <div class="icon4">
+            <img  src="img/white-roses-14427003892py-removebg-preview.png" class="edited" />
+          </div>
+          <div class="content4">
+              <h3>We Decorate Events</h3>
+              <center>
+              <p class="p">
+                In order to make every event memorable and unique; we work closely with you to create stunning themes and décor, visual displays.
+              </p>
+          </center>
+              </div>
+      
+      </div>
+      <div class="card">
+          <div class="icon4">
+            <img  src="img/calendar-icon-on-black-background-for-graphic-and-vector-23529823-removebg-preview.png"  class="edited1"/>
+          </div>
+          <div class="content4">
+              <h3>We Plan and organize Events</h3>
+            <p class="p">
+              We plan your event, create timelines, manage and act as liaison between you and your vendors.
+               </p>
+          </div>
+    
+      </div>
+      <div class="card">
+          <div class="icon4">
+             
+            <img  src="img/comrawpixel487664-removebg-preview.png"  class="edited2"/>
+          </div>
+          <div class="content4">
+              <h3>We offer Catering</h3>
+              <p class="p">
+               We cook for events, and make sure we deliver as expected. We serve according to your menue.
+            </p>
+          </div>
+        
+      </div>
+    </div>
+  </br> </br>  </br> 
+    <p class="work">
+      WHY SHOULD YOU WORK WITH US?
+    </p>
+  </br> 
+    <p class="work1">
+      We are a team of young, active and innovate females.We organize all kinds of events and make them a success and we also have well behaved waiters who have all
+       it takes to make your event a dream come true. We aim to make every event special & memorable, we pride ourselves in offering haute eventing services. We are professional and treat all clients equal because we are one family. We offer our best creative minds to 
+       your event aand put our hearts into it.
+    </p>
+    </center>
+
+
+  </br> </br>  </br> 
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script> 
+      <hr class="horizontal">
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="About.html">What defines us?</a></li>
+                <li><a href="Our Services.html">Our Services</a></li>
+                <li><a href="Our Gallery.html">Gallery</a></li>
+                <li><a href="Contact.php">Contact us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                
+              </ul>
+            
+            </div>
+
+            
+            <div class="footer-col">
+              <h4>Operating hours</h4>
+              <ul>
+                <li>Monday to Friday</li>
+                <li>09h00 – 17h00</a></li>
+                <li>Saturday</li>
+                <li>08h00 – 15h00</li>
+                <li>Sunday and Public Holidays</li>
+                <li>Closed</li>  
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Address</h4>
+              <ul>
+                <li>4876 Bila Street</li>
+                <li>Chiawelo ext 2</li>
+                <li>Soweto</a></li>
+                <li>1818</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/taypromosandevents/"><img src="icons/facebook.png" class= "icon1"align="right"hspace="2px"vspace="2px"></i></a>
+                <a href="https://www.instagram.com/"><img src="icons/insta.jpg"class= "icon1" align="right"hspace="2px" vspace="2px"></i></a>
+                <a href="https://twitter.com/?lang=en"><img src="icons/twitter.jpg"class= "icon1" align="right"hspace="2px" vspace="2px"></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </br></b>
+          <hr class="end">
+          <center> <p>copyright &#169; 2021 TAY PROMOS AND EVENTS. All rights resevered </p></center>
+        </div>
+
+ </footer> 
+ </body>
+ </html>                   
